@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var alunosAprovados = 0;
+
+do {
+    
+    var nota1 = parseFloat(prompt("Por favor, insira a primeira nota do aluno:"));
+    var nota2 = parseFloat(prompt("Agora, insira a segunda nota do aluno:"));
+
+    
+    var media = (nota1 + nota2) / 2;
+
+   
+    if (media >= 9.5) {
+        alunosAprovados++;
+        alert("O aluno foi aprovado com média🎊🎉🎇 " + media.toFixed(2));
+    } else {
+        alert("O aluno foi reprovado com média😨😰😱 " + media.toFixed(2));
+    }
+
+    
+    var resposta = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+} while (resposta === "S");
+
+
+alert("Total de alunos aprovados: " + alunosAprovados);
+
+
+    </script>
+
+<body>
+
+</body>
+
+</html>
